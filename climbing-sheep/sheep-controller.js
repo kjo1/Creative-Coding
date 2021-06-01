@@ -6,7 +6,7 @@ export class SheepController {
 		this.img.onload = () => {
 			this.loaded();
 		};
-		this.img.src = '/images/sheep.png';
+		this.img.src = './images/sheep.png';
 
 		this.items = [];
 
