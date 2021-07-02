@@ -36,7 +36,7 @@ export class Sheep {
 
 		this.animate(ctx, dots);
 	}
-
+	// * 05/31/2021 kj: up to 14:20
 	animate(ctx, dots) {
 		this.x -= this.speed;
 		const closest = this.getY(this.x, dots);
@@ -44,7 +44,7 @@ export class Sheep {
 
 		ctx.save();
 		ctx.translate(this.x, this.y);
-		// ctx.rotate(this.x, this.y);
+		// ctx.rotate(this.x, this.y); //! this makes sheep spinning
 		ctx.rotate(closest.rotation);
 		ctx.drawImage(
 			this.img, //
